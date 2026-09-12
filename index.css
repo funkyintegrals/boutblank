@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: Consolas, "Courier New", monospace;
+  font-family: "Courier New", monospace;
+  background: #fffde7;
 }
 
 #hover-zone {
@@ -64,4 +65,19 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+main {
+  padding: 50px;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "Courier New", monospace;
+  font-size: 40px;
+}
+
+main p {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
 }
