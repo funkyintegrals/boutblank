@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Musikas</title>
+
+  <style>
+    body {
+      background: #181818;
+      color: white;
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .song {
+      background: #252525;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .song h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+
 <body>
 
-<h1>My musics and stuff yes good okay</h1>
+  <h1>Random music you can find from f_i</h1>
 
-<audio controls>
-  <source src="files/websaitmusik.mp3" type="audio/wav">
-  <source src="files/backglaze.mp3" type="audio/wav">
-</audio>
+  <div class="song">
+    <h2>Websaitmusik</h2>
+    <audio controls>
+      <source src="files/websaitmusik.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+  </div>
 
+  <div class="song">
+    <h2>Backglaze (Made for my OC, Theo)</h2>
+    <audio controls>
+      <source src="files/backglaze.mp3" type="audio/mpeg">
+      Your browser does not support audio.
+    </audio>
+  </div>
 
 </body>
 </html>
