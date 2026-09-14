@@ -23,8 +23,8 @@ body {
   padding: 20px;
   box-sizing: border-box;
 
-  background: #333;
-  color: white;
+  background: #c8a2c8;
+  color: #fffacd;
 
   transition: left 0.3s ease;
   z-index: 999;
@@ -38,7 +38,7 @@ body {
   display: block;
   margin-bottom: 12px;
 
-  color: white;
+  color: #fffacd;
   text-decoration: none;
   font-weight: bold;
 }
@@ -50,7 +50,7 @@ body {
 .plain-link {
   display: inline;
 
-  color: white;
+  color: #fffacd;
   text-decoration: none;
   font-weight: bold;
 
@@ -62,7 +62,7 @@ body {
 .plain-link:focus,
 .plain-link:active,
 .plain-link:visited {
-  color: white;
+  color: #fffacd;
   text-decoration: none;
   font-weight: bold;
 }
