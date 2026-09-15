@@ -4,7 +4,7 @@ body {
   background: #fffde7;
 }
 
-#hover-zone {
+#hover-zone-left {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,16 @@ body {
   z-index: 1000;
 }
 
-#sidebar {
+#hover-zone-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100vh;
+  z-index: 1000;
+}
+
+#sidebar-left {
   position: fixed;
   top: 0;
   left: -250px;
@@ -23,15 +32,36 @@ body {
   padding: 20px;
   box-sizing: border-box;
 
-  background: #c8a2c8;
+  background: #a9a9a9;
   color: #fffacd;
 
   transition: left 0.3s ease;
   z-index: 999;
 }
 
-#sidebar.active {
+#sidebar-left.active {
   left: 0;
+}
+
+#sidebar-right {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: #a9a9a9;
+  color: #fffacd;
+
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+#sidebar-right.active {
+  right: 0;
 }
 
 .titles {
