@@ -1,25 +1,51 @@
-const hoverZone = document.getElementById('hover-zone');
-const sidebar = document.getElementById('sidebar');
+const hoverZoneLeft = document.getElementById('hover-zone-left');
+const sidebarLeft = document.getElementById('sidebar-left');
+const hoverZoneRight = document.getElementById('hover-zone-right');
+const sidebarRight = document.getElementById('sidebar-right');
 
-let isHoveringSidebar = false;
+let isHoveringSidebarLeft = false;
+let isHoveringSidebarRight = false;
 
-hoverZone.addEventListener('mouseenter', () => {
-  sidebar.classList.add('active');
+// Left sidebar
+hoverZoneLeft.addEventListener('mouseenter', () => {
+  sidebarLeft.classList.add('active');
 });
 
-sidebar.addEventListener('mouseenter', () => {
-  isHoveringSidebar = true;
+sidebarLeft.addEventListener('mouseenter', () => {
+  isHoveringSidebarLeft = true;
 });
 
-sidebar.addEventListener('mouseleave', () => {
-  isHoveringSidebar = false;
-  sidebar.classList.remove('active');
+sidebarLeft.addEventListener('mouseleave', () => {
+  isHoveringSidebarLeft = false;
+  sidebarLeft.classList.remove('active');
 });
 
-hoverZone.addEventListener('mouseleave', () => {
+hoverZoneLeft.addEventListener('mouseleave', () => {
   setTimeout(() => {
-    if (!isHoveringSidebar) {
-      sidebar.classList.remove('active');
+    if (!isHoveringSidebarLeft) {
+      sidebarLeft.classList.remove('active');
+    }
+  }, 200);
+});
+
+// Right sidebar
+hoverZoneRight.addEventListener('mouseenter', () => {
+  sidebarRight.classList.add('active');
+});
+
+sidebarRight.addEventListener('mouseenter', () => {
+  isHoveringSidebarRight = true;
+});
+
+sidebarRight.addEventListener('mouseleave', () => {
+  isHoveringSidebarRight = false;
+  sidebarRight.classList.remove('active');
+});
+
+hoverZoneRight.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!isHoveringSidebarRight) {
+      sidebarRight.classList.remove('active');
     }
   }, 200);
 });
